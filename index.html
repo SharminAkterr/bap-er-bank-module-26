@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank login page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="container mx-auto mt-12">
+        <h1 class="text-center text-5xl ">Welcome to <span class="text-violet-900 font-semibold">our Bank</span> !!!
+        </h1>
+    </header>
+    <main>
+        <section class="container mx-auto bg-violet-300 w-3/4 mt-10 p-10 rounded-lg">
+            <h3 class="text-3xl text-center font-medium mb-10 text-violet-950">Please Login Here</h3>
+            <div>
+                <input id="input-email" type="email" name="" class="block w-3/4 px-4 py-2 rounded-md"
+                    placeholder="email address: programming@gmail.com">
+                <input id="input-pass" type="password" name="" class="my-6 w-3/4 px-4 py-2 rounded-md block"
+                    placeholder="pass: 12345">
+                <button id="btn-submit"
+                    class="bg-violet-950 text-white px-4 py-2 rounded-lg hover:bg-violet-800 font-medium">Submit</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/login.js"></script>
+
+
+</body>
+
+</html>
